@@ -35,9 +35,19 @@ label {
   color: var(--accent);
 }
 
+.add-playlist {
+	display: flex;
+	align-items: center;
+}
+
 .form-control {
   background-color: var(--secondary-button);
   color:azure;
+}
+
+.name-playlist{
+	background-color: white;
+	height: 2rem;
 }
 
 .loginText {

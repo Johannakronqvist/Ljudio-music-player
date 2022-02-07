@@ -53,10 +53,10 @@ function Playlist({onCreate}) {
       </button>
 
       <div className={showInput}>
-        <div className="input-group">
+        <div className="add-playlist input-group">
           <input
             type="text"
-            className={`form-control ${isInvalid}`}
+            className={`name-playlist form-control ${isInvalid}`}
             value={playlistName}
             placeholder="Name your playlist"
             aria-label="Name your playlist"

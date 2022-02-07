@@ -109,7 +109,7 @@ function MusicPlayer() {
                   <input type="radio" name="options" id="option1" />
                   Search
                 </label>
-                <button className="btn" type="button" data-toggle="collapse" data-target="#collapse">Hide Player</button>
+                <button className="btn hideBtn" type="button" data-toggle="collapse" data-target="#collapse">Hide Player</button>
               </div>
               {/* Songs list */}
               <div className="songList">

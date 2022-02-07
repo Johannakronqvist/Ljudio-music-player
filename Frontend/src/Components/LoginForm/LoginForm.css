@@ -1,3 +1,11 @@
+:root {
+	--primary:rgb(39, 32, 29);
+	--primary-button: rgb(255, 81, 0);
+	--secondary-button:rgb(51, 23, 11);
+	--accent:rgb(255, 81, 0);
+  }
+  
+
 .login-card {
     margin-top: 2rem;
     min-height: 60vh;
@@ -11,7 +19,7 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: var(--secondary-button) !important;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
@@ -20,6 +28,8 @@
 
 .button{
     margin-top: 1.5rem;
+	background-color: var(--primary-button) !important;
+	color: var(--secondary-button) !important;
 }
 
 .registerMessage {
