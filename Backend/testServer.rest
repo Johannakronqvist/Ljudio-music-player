@@ -1,0 +1,67 @@
+
+//test the registration 
+POST http://localhost:4000/api/user 
+Content-Type: application/json
+
+{
+"FullName": "dino nino",
+"Username": "nino", "Password": "123abc", "Email": "nino@mail.com"
+
+}
+
+###
+
+//Create new playlist 
+POST http://localhost:4000/api/playlist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjU4NTAyNywiZXhwIjoxNjMyNjcxNDI3fQ.0Oyd1OAPs3vKkWOzpUw2-AmYDBeW2QtjyWa9jaCkoMY
+Content-Type: application/json
+
+{ "Playlist_name": "test 3"}
+
+###
+
+//Get to get all users and playlists 
+GET http://localhost:4000/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjg5NzY2NywiZXhwIjoxNjMyOTg0MDY3fQ.2xJPMDiwgUywJLioEko09e38bfynvWuR-OsoCsXQdE8
+
+###
+
+//Get user by id and its playlists 
+GET http://localhost:4000/api/userplaylist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjg5NzY2NywiZXhwIjoxNjMyOTg0MDY3fQ.2xJPMDiwgUywJLioEko09e38bfynvWuR-OsoCsXQdE8
+
+###
+
+# Delete playlist
+DELETE   http://localhost:4000/api/playlist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjg5NzY2NywiZXhwIjoxNjMyOTg0MDY3fQ.2xJPMDiwgUywJLioEko09e38bfynvWuR-OsoCsXQdE8
+Content-Type: application/json
+
+{ "id": "73"}
+
+
+### DELETE SONG
+DELETE   http://localhost:4000/api/song
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjg5NzY2NywiZXhwIjoxNjMyOTg0MDY3fQ.2xJPMDiwgUywJLioEko09e38bfynvWuR-OsoCsXQdE8
+Content-Type: application/json
+
+{ "songId": "6O3OP2MXWBE"}
+
+
+
+
+### Get songs from playlist
+GET http://localhost:4000/api/user/playlist/song/51
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjkzMDQ2OSwiZXhwIjoxNjMzMDE2ODY5fQ.e2O3SBHau9OIl3KNO9NnkpedRtygnv4dgqjBaSlJle0
+Content-Type: application/json
+
+
+### Add song to user playlist
+POST http://localhost:4000/api/user/playlist/song
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMjg5NzY2NywiZXhwIjoxNjMyOTg0MDY3fQ.2xJPMDiwgUywJLioEko09e38bfynvWuR-OsoCsXQdE8
+Content-Type: application/json
+
+{ 
+"playlistId": 51,
+"song":{"songName":"test song 2", "artist":"Nur Egal", "album":"First album", "image":"no image","songId":"test2"}
+}

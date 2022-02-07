@@ -1,0 +1,48 @@
+:root {
+	--primary:rgb(39, 32, 29);
+	--primary-button: rgb(255, 81, 0);
+	--secondary-button:rgb(51, 23, 11);
+	--accent:rgb(255, 81, 0);
+  }
+
+.navbar{
+    background-color: var(--secondary-button);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.text{
+    color: var(--accent);
+    display: flex!important;
+    justify-content: center!important;
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-logout, .btn-login, .btn-register{
+    color: var(--secondary-button);
+    background-color: var(--accent);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-login{
+    margin-right: 1rem;
+}

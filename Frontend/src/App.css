@@ -1,0 +1,169 @@
+:root {
+  --primary:rgb(39, 32, 29);
+  --primary-button: rgb(255, 81, 0);
+  --secondary-button:rgb(51, 23, 11);
+  --accent:rgb(255, 81, 0);
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.card-header {
+  background-color: var(--secondary-button);
+  color:var(--primary-button);
+}
+
+.hv-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-header {
+  color: var(--accent);
+}
+
+.login-card {
+ display: flex;
+ flex-direction: column;
+ margin-top: 15%;
+ color: var(--accent);
+}
+
+label {
+  color: var(--accent);
+}
+
+.form-control {
+  background-color: var(--secondary-button);
+  color:azure;
+}
+
+.loginText {
+  color: var(--primary-button);
+}
+
+.loginText:hover {
+cursor: pointer;
+}
+
+.list-group-item {
+  background-color: var(--secondary-button);
+  color: var(--primary-button);
+}
+
+.list-group-item.active {
+  background-color: var(--primary-button);
+  color: var(--secondary-button);
+  border-color: azure;
+}
+
+.playerBottom {
+      background:rgba(0,0,0,.8);
+      border-top-right-radius:20px;
+      border-top-left-radius:20px;
+      color:var(--primary-button);
+      width: 100%;
+      z-index: 3;
+      transform: translateX(-50%);
+      /* position: fixed;
+      bottom: 0; */
+      left: 50%;
+      padding: 1rem 20rem;
+}
+
+a {
+  background-color: var(--secondary-button);
+  color: var(--primary-button);
+  border-radius: 1%;
+  border: solid 0.5px var(--primary);
+}
+
+a:hover {
+  color: var(--secondary-button);
+  background-color: var(--primary-button);
+}
+
+.btn {
+  background-color:var(--secondary-button);
+  color:var(--primary-button);
+  margin: 1rem 0;
+}
+
+.btn:hover {
+	color: var(--secondary-button);
+	background-color: var(--primary-button);
+}
+
+.btn-group-lg {
+  color: rgb(255, 81, 0);
+}
+
+.card {
+  border: solid 0.5px var(--primary);
+}
+
+.rounded-circle {
+  border-radius:50%;
+  width:55px;
+  height:55px;
+  border-style: none;
+  } 
+
+  .fa-trash {
+    font-size: 115%;
+  }
+
+.progressBar{
+  min-width: 320px;
+}
+
+.pt-5 {
+  min-width: 300px;
+  margin: 1rem 0 1rem 0;
+  padding: 0 !important
+}
+
+
+@media only screen and (max-width: 1000px){
+  .playerBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+
+  .progressBar{
+    min-width: 220px;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+
+  .btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 0.8rem;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    border-radius: 70%;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .6rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.fa-trash {
+  font-size: 130%;
+}
+
+.progressBar{
+    min-width: 120px;
+}
+
+}

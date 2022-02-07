@@ -1,0 +1,63 @@
+.bg-primary {
+        background-color: #1a63a7!important;
+}
+
+.login-card{
+    margin-top: 2rem;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 2rem;
+}
+
+.wrapper {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.button{
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    text-transform: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1a63a7;
+    border-color: #1a63a7;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.redirect{
+    margin-top: .5rem!important;
+}
+
+.loginText {
+    color: #1a63a7;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.successMessage {
+    color: green;
+    font-weight: bold;
+}

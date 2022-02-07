@@ -1,0 +1,27 @@
+.login-card {
+    margin-top: 2rem;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 2rem;
+}
+
+.button{
+    margin-top: 1.5rem;
+}
+
+.registerMessage {
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,17 @@
+:root {
+	--primary:rgb(39, 32, 29);
+	--primary-button: rgb(255, 81, 0);
+	--secondary-button:rgb(51, 23, 11);
+	--accent:rgb(255, 81, 0);
+  }
+  
+
+.modal-body, .modal-header {
+	background-color: var(--primary);
+	color: var(--accent);
+	border: none;
+}
+
+button {
+	border: none;
+}
