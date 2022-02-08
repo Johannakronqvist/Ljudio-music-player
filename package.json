@@ -1,0 +1,19 @@
+{
+  "name": "musicplayer-fullstackreact-dev",
+  "version": "1.0.0",
+  "description": "Group project in React course. Users can search and listen to music. \r Logged in users have the extra feature of creating playlists and saving songs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johannakronqvist/Ljudio-music-player.git"
+  },
+  "author": "JOhanna\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[o",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johannakronqvist/Ljudio-music-player/issues"
+  },
+  "homepage": "https://github.com/Johannakronqvist/Ljudio-music-player#readme"
+}
